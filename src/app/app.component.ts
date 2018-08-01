@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CsvReadService } from './shared/services/csv-read.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  examples = [
+    {
+        title: 'Line Chart',
+        route: 'chart'
+    }
+];
+
+  constructor(){}
 }
